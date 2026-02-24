@@ -140,3 +140,10 @@ df.info()
 # After all cleaning steps, we can save the cleaned DataFrame to a new CSV file
 df.to_csv('cleaned_cafe_sales.csv', index=False)
 print("Cleaned DataFrame saved to 'cleaned_cafe_sales.csv'")
+
+# Load the cleaned CSV file into a new DataFrame
+cleaned_df = pd.read_csv('cleaned_cafe_sales.csv')
+
+# Display the first 5 rows of the new DataFrame
+print("First 5 rows of the loaded 'cleaned_cafe_sales.csv':")
+cleaned_df.head()
